@@ -1,0 +1,496 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav img{
+    height: 60px;
+}
+.nav .images1{
+    background-color: orangered;
+    border-radius: 7px;
+}
+
+.navbar{
+    display: flex;
+    margin-left: 10px;
+    list-style: none;
+    
+    /* gap: 10px; */
+}
+
+.navbar li a{
+    text-decoration: none;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    font-size: 1.5em;
+}
+
+.navbar li a:hover{
+    font-size: 2em;
+    color: coral;
+
+}
+
+.navbar li a span{
+    color: orangered;
+    position: relative;
+    text-align: center;
+}
+
+.navbar li a span::after, .navbar li a span::before
+    {
+   content:  "";
+   display: block;
+   /* position: absolute; */
+   right: 0;
+   left: 0;
+   width:100px;
+   height: 2px;
+   background-color: orangered;
+   margin-bottom: 10px;
+}
+
+
+.contain{
+    background-image: url(images/bg-home.jpg);
+    background-size: cover;
+    width: 100%;
+    font-size: 1.5em;
+    color: white;
+    /* position: absolute; */
+}
+
+.contain h2,p{
+    /* padding: 30px; */
+    margin: 30px;
+}
+
+.contain h2 span{
+    font-size: 2.5em;
+    color: orangered;
+}
+
+.formcontainer{
+    width: 70%;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    /* margin-bottom: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    position: relative;
+    border-radius: 7px;  
+
+}
+
+.childform{
+    margin: 10px;
+    text-align: left;
+    position: relative;
+   
+}
+
+.childform label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+
+}
+
+.childform input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(220, 220, 220);
+    font-size: 1em;
+}
+
+.formcontainer .search{
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: orange;
+    font-size: 1em;
+    border: none;
+    border-radius: 3px;
+}
+
+.formcontainer .search:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.location{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location .elt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.location .elt img{
+    height: 50px;
+    width: 50px;
+}
+
+.location .loc-child{
+    border: 1px solid black;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.p1{
+    font-size: 1.5em;
+    padding: 50px;
+}
+
+.p1 h3{
+    color: orangered;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+.p1 h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 50px;
+}
+
+   
+
+
+ 
+.prestation .container{
+    text-align: center;
+
+}
+
+.prestation h3{
+    font-size: 2em;
+    color: orangered;
+}
+
+.prestation h1{
+    font-size: 4em;
+    font-weight: 600;
+}
+.prestation img{
+    width: 300px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+.voitures{
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    gap: 15%;
+    box-shadow: 1px 1px 1px rgba(243, 239, 239, 0.827);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: 
+    "mod1 mod2 mod3"
+    "mod4 mod5 mod6"; 
+} 
+
+#mdo1{
+    grid-area: mod1;
+}
+#mdo1{
+    grid-area: mod2;
+}
+#mdo3{
+    grid-area: mod3;
+}
+#mdo4{
+    grid-area: mod4;
+}
+#mdo5{
+    grid-area: mod5;
+}
+#mdo6{
+    grid-area: mod6;
+}
+
+.voitures .modele{
+    box-shadow: 2px 5px 2px rgba(153, 151, 151, 0.52);
+    position: relative;
+
+}
+
+.prestation h2{
+    background-color: orangered;
+    width: 100px;
+    height: 35px;
+    padding-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.prestation .marque{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.prestation .prix{
+    color: orangered;
+    font-size: 1.5em;
+}
+
+.prestation .prix span{
+    font-weight: bold;
+}
+
+.prestation button{
+    border: 1px solid transparent;
+    background-color: orangered;
+    color: white;
+    width: 300px;
+    height: 55px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    margin: 20px;
+} 
+
+
+
+.apropos{
+    
+}
+
+.apropos img{
+    height: 500px;
+    width: 800px;
+}
+
+.apropos .head{
+    text-align: center;
+    padding-top: 15%;
+}
+
+.apropos h3{
+    color: orangered;
+    font-size: 2em;
+    font-weight:900 ;
+}
+
+.apropos h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.apropos .contenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.apropos h2{
+    text-transform: uppercase;
+    color: orangered;
+    font-size: 1.5em;
+}
+
+.apropos p{
+    font-size: 1.5em;
+}
+
+.apropos button{
+    width: 100%;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 8px ;
+    color: white;
+    font-size: 2em;
+    background-color: orangered;
+}
+
+
+.avis .head{
+    text-align: center;
+}
+
+.avis h3{
+    color: orangered;
+    font-size: 2em;
+    font-weight:900 ;
+}
+
+
+.avis h1{
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.avis .contenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   
+}
+
+.avis .contenu .box{
+    border: 1px solid rgb(210, 210, 204);
+    margin-left: 15px;
+    box-shadow: 0px 2px orange;
+    height: 400px;
+    padding: 10px;
+}
+
+.avis .contenu .box img{
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.newletter{
+    width: 100%;
+    height: 70%;
+    margin-top: 50px;
+    height: 100%;
+    padding: 30px 20px;
+    font-size: 1.2em;
+    text-align: center;
+    background: orangered;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.newletter h1{
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.newletter .imbox{
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.newletter .imbox input{
+    font-size: 1.5em;
+    border: none;
+}
+
+.newletter .imbox button    {
+    background: orangered;
+    color: white;
+    gap: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    width: 200px;
+    height: 50px;
+}
+
+.ending{
+    background: black;
+    margin-top: 50px;
+    width: 100%;
+    
+}
+
+.ending .tiktok {
+    filter: grayscale(50%) brightness(3) invert(1);
+    background: linear-gradient( to cover, white, orangered);
+    mask-image: url(./icones/bxl-tiktok.svg);
+    mask-size: cover;
+    height: 30px;
+}
+.ending .whatsapp {
+    filter: grayscale(50%) brightness(3) invert(1);
+    mask-image: url(./icones/bxl-whatsapp.svg);
+    mask-size: cover;
+    height: 30px;
+}
+.ending .youtube {
+    filter: grayscale(100%) brightness(1) invert(1);
+    background: linear-gradient( to cover, white, orangered);
+    mask-image: url(./icones/bxl-youtube.svg);
+    mask-size: cover;
+    height: 30px;
+
+}
+.ending .twitter {
+    filter: grayscale(50%) brightness(1) invert();
+    mask-image: url(./icones/bxl-twitter.svg);
+    mask-size: cover;
+    height: 30px;
+}
+
+.ending .boxx h3{
+    color: orangered;
+}
+
+.ending .boxx h2{
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.ending{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 30px 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
